@@ -1,34 +1,63 @@
 # Phosphene Simulation & Human Perception Analysis
+---
 
 ## Overview
-This project investigates how algorithmic design choices in phosphene simulation affect human interpretability of visual cortical prosthetic outputs. The work combines computer vision, simulation, and human-subject experimentation to evaluate perceptual performance quantitatively.
+This project investigates how algorithmic design choices in phosphene-based visual
+simulation influence human interpretability of visual cortical prosthetic outputs.
+The work combines computer vision, simulation, and human-subject experimentation to
+study perception under low-resolution visual representations.
+
+---
 
 ## Motivation
-Visual cortical prostheses are constrained by low spatial resolution, making it critical to encode visual information in a way that remains interpretable to users. This project explores how image preprocessing, phosphene configuration, and simulation parameters influence human perception and confidence.
+Visual cortical prostheses operate under severe spatial and information constraints.
+As a result, how visual information is encoded—through preprocessing, phosphene
+configuration, and simulation parameters—has a significant impact on downstream
+perception.
 
-## System Design
-- Biologically inspired phosphene simulation pipeline
-- Image and video preprocessing using computer vision techniques
-- Parameterized control of phosphene density and shape
-- Exploratory integration with a deep-learning autoencoder
-- Human perception experiments with controlled stimuli
+This project explores these design choices using controlled simulation and human
+evaluation to better understand qualitative and quantitative perceptual effects.
 
-## Human Experiment
-- Sighted participants evaluated phosphene-rendered video stimuli
-- Performance measured using Signal Detection Theory (d′)
-- Confidence ratings analyzed to assess metacognitive sensitivity
-- Study conducted under university ethics approval
+![Phosphene simulation variations](results/media/phosphene_pokeball.png)
+---
 
-## Key Findings
-- Higher phosphene density improves perceptual sensitivity
-- Circular phosphene shapes outperform irregular shapes
-- Edge-based preprocessing (Canny) significantly increases interpretability
-- Confidence correlates with accuracy for simpler stimuli
+## System Overview
+The high-level workflow consists of:
+
+1. Image and video preprocessing using computer vision techniques  
+2. Phosphene simulation using a biologically inspired cortical model  
+3. Stimulus generation under controlled parameter variations  
+4. Human perception experiments conducted via an online survey platform  
+5. Quantitative analysis of perceptual performance and confidence  
+---
+
+## Human Perception Experiment
+A human-subject experiment was conducted to evaluate perceptual interpretability under
+different simulation and preprocessing conditions.
+
+- Stimuli were generated offline using the simulation pipeline
+- Participants viewed phosphene-rendered visual stimuli
+- Responses included recognition accuracy and confidence ratings
+- Analysis was performed using Signal Detection Theory (d′)
+
+To protect participant privacy and comply with ethical guidelines, raw data and survey
+implementations are not included. A summary of the experimental design is provided in
+`docs/human_study_design.md`.
+![Example phosphene simulation video](results/media/example_phosphene_simulation.mp4)
+
+
+---
+
+## Dependencies and Prior Work
+This project builds upon the open-source phosphene simulation framework **Dynaphos**
+(van der Grinten et al., 2024), which provides a biologically inspired model of cortical
+phosphene generation.
+
+The underlying simulator is used as a baseline component. All experimental design,
+preprocessing strategies, analysis, and interpretation were developed independently
+as part of this work.
+
+---
 
 ## Tech Stack
 Python · OpenCV · PyTorch · MATLAB · NumPy · SciPy · Matplotlib
-
-## Repository Structure
-
-## Notes
-Raw participant data and identifying information have been excluded. This repository contains a cleaned and representative subset of the original research code.
