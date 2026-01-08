@@ -29,3 +29,6 @@ Visual cortical prostheses are constrained by low spatial resolution, making it 
 Python · OpenCV · PyTorch · MATLAB · NumPy · SciPy · Matplotlib
 
 ## Repository Structure
+
+## Notes
+Raw participant data and identifying information have been excluded. This repository contains a cleaned and representative subset of the original research code.
