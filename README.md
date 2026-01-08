@@ -22,7 +22,6 @@ evaluation to better understand qualitative and quantitative perceptual effects.
 ---
 
 ## System Overview
-The high-level workflow consists of:
 
 1. Image and video preprocessing using computer vision techniques  
 2. Phosphene simulation using a biologically inspired cortical model  
@@ -43,8 +42,6 @@ different simulation and preprocessing conditions.
 To protect participant privacy and comply with ethical guidelines, raw data and survey
 implementations are not included. A summary of the experimental design is provided in
 `docs/human_study_design.md`.
-![Example phosphene simulation video](results/media/example_phosphene_simulation.mp4)
-
 
 ---
 
